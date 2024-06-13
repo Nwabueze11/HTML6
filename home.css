@@ -13,15 +13,16 @@ body{
     display: flex;
     background: #dadada;
     font-size: 25px;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 10px;
     padding-right: 20px;
-    position: fixed;
+    position: relative;
     z-index: 99;
     transition: 0.5s;
     border-bottom: 1px solid transparent;
     width: 100%;
 }
+
 .main-navigation{
     background: #dadada;
     text-align: center;
@@ -179,12 +180,61 @@ body{
     }
 }
 
+/* ==========Author============= */
+
+.content-Aut{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-Aut .author-left{
+    display: block;
+    width: 100%;
+}
+
+.content-Aut .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ .content-Aut .info h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.author .content-Aut .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.author .author-right{
+    display: block;
+    width: 100%;
+}
+
+.author .author-right img{
+    width: 500px;
+    height: auto;
+    border-radius: 20%;
+    position: relative;
+}
+
 /* ======about========= */
 
 .about{
     width: 100%;
     padding: 78px 0px;
     background-color: #191919;
+    margin-top: 20px;
 }
 
 .about img{
@@ -238,7 +288,8 @@ span{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
+    font-size: 15px;
+    padding: 15px 40px;
     border-radius: 30px;
     transition: .4s;
 }
@@ -262,6 +313,7 @@ span{
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col{
@@ -298,7 +350,8 @@ span{
     text-decoration: none;
     display: block;
     align-items: center;
-    padding: 10px 0px;background-color: #2bab0d;
+    padding: 15px 0px;
+    background-color: #2bab0d;
     color: #fff;
     font-size: 18px;
     border-radius: 5px;
@@ -318,7 +371,7 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(images/about-7.jpg);
+    background: url(images/about-3.jpg);
     background-size: cover;
 }
 
@@ -329,13 +382,15 @@ span{
 
 .contact .content1 h2{
     font-size: 36px;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 10px;
 }
 
 .contact .content1 p{
-    font-weight: 300;
-    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
 }
 
 .container1{
@@ -354,7 +409,7 @@ span{
 
 .container1 .contactInfo .box{
     position: relative;
-    padding: 20 0px;
+    margin: 20px 0px;
     display: flex;
 }
 
@@ -366,8 +421,8 @@ span{
     justify-content: center;
     align-items: center;
    border-radius: 50%;
-   font-size: 22px;
-   box-shadow: inset 10px 10px 12px #ff0000,inset -10px -10px 12px #ff0000;
+   font-size: 30px;
+   box-shadow: inset 10px 10px 12px #fff,inset -10px -10px 12px #fff;
 }
 
 .container1 .contactInfo .box .icon i{
@@ -377,19 +432,19 @@ span{
 .container1 .contactInfo .box .text{
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .container1 .contactInfo .box .text h3{
-    font-weight: 500;
-    color: #00bcd4;
+    font-weight: bold;
+    color: #fff;
 }
 
 .contactForm{
-    width: 100% auto;
+    width: 30%;
     padding: 40px;
     background: #fff;
 }
@@ -440,7 +495,7 @@ span{
 
 .contactForm .inputBox input[type='submit']{
     width: 100px;
-    background: #00bcd4;
+    background: #2bab0d;
     color: #fff;
     border: none;
     cursor: pointer;
